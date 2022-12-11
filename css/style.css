@@ -1,0 +1,229 @@
+
+/* sub-text */
+p{
+    color:hsl(0, 0%, 55%);
+    font-family: 'Alata', sans-serif;
+}
+
+/*containers*/
+
+ .container-fluid{
+    padding: 8% 10%;
+} 
+
+#home .container-fluid{
+    padding: 5% 10% 10%;
+    background-image: url("../images/desktop/image-hero.jpg");
+    
+    background-size: 100% 100%;
+}
+
+
+
+/* nav div*/
+.navbar-brand{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+}
+.nav-link{
+    color: white;
+    font-size: .8rem;
+    font-family: 'Alata', sans-serif;
+}
+
+/* home section */
+
+.home-title-container{
+    
+    margin-top: 10%;
+    
+    
+}
+.home-title{
+    line-height: .9;
+    padding: 40px;
+    color: white;
+    border: solid 2px white;
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    
+}
+
+/* content-vr section */
+.row-vr{
+    
+    position: relative;
+}
+.column-1-vr{
+    position: static;
+    padding: 0;
+    
+}
+.column-2-vr{
+    margin-top: 13%;
+    position: static;
+    margin-left: -10%;
+    background-color: white;
+    padding: 100px 0px 0px 100px;
+    margin-bottom: -1px;
+    
+    color: black;  
+}
+
+.vr-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    
+}
+.vr-img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* collection-galery */
+.row1{
+    flex-wrap: nowrap;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.heading{
+    float: right;
+}
+.row2{
+    justify-content: center;
+}
+.galery-section-1{
+    padding: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.heading-pictures-vr{
+    margin-top: -70px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* footer */
+#footer .container-fluid{
+    background-color: black;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+.footer-bar-row{
+    padding: 10px 0;
+   color: white;
+   justify-content: space-between;
+}
+/*left footer*/
+
+.left-footer-class{
+    display: flex;
+    padding: 0;
+    
+}
+.logo-footer{
+    padding: 10px;
+}
+.left-footbar-li{
+    
+    padding: 10px;
+    display: flex;
+}
+/*right footer*/
+
+.right-footer-bar{
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 10px;
+}
+.right-footbar-li{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    
+}
+.footer-copyright{
+    text-align: right;
+}
+
+.mbl-button{
+    display: none;
+}
+
+@media (max-width:768px){
+    /* home section */
+    .home-title{
+        font-size: 3.6rem;
+    }
+    /* content-vr section */
+    .column-1-vr{
+        width: 100%;
+    }
+    .column-2-vr{
+        margin: 0;
+        width: 100%;
+        padding:30px 0 30px;
+        flex-wrap:wrap;
+    }
+    .see-all{
+        position: absolute;
+        bottom: 1px;
+    }
+
+    /* footer */
+    .logo-footer{
+        text-align: center;
+    }
+    .left-footer-class{
+        text-decoration-style: none;
+        flex-direction: column;
+        align-items: center
+    }
+    .right-footer-bar{
+        justify-content: center
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+
+
+} 
+
+@media (max-width:500px){
+     /* home section */
+    #home .container-fluid{
+        background-image: url("../images/mobile/image-hero.jpg");
+       
+    }
+    .home-title{
+        font-size: 3rem;
+        padding: 10px;
+    }
+    /* content-vr section */
+    .heading-vr{
+        text-align: center;
+    }
+    /* content our creation this line of code will hide the see all button and then appear @ the bottom of the container */
+    .col-mbl{
+        text-align: center;
+    }
+    .mbl-button{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .see-all{
+        display: none;
+    }
+
+}
+
